@@ -13,40 +13,47 @@
   }
 }
 .hero {
-  position: relative;
   background-color: #84a178;
-  background-image: url(..//../images/hero-dots-mobile.png);
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-size: 100%;
-}
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 192dpi) and (max-width: 768px), (min-resolution: 2dppx) and (max-width: 768px) {
-  .hero {
-    background-image: url("..//../images/hero-dots-mobile@2x.png");
-  }
 }
 
 .hero__container {
+  position: relative;
   padding-top: 61px;
   padding-left: 20px;
-  height: 392px;
+  height: 453px;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .hero__container {
-    width: 480px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__container {
+    max-width: 768px;
+    height: 349px;
     padding-top: 0;
     padding-left: 32px;
     padding-right: 32px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    max-width: 1200;
+    height: 591px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 
 .hero__title {
   font-family: "Seymour One";
+  display: block;
   font-style: normal;
+  width: 247px;
   font-weight: 400;
   font-size: 26px;
   line-height: 1.26;
@@ -64,6 +71,14 @@
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 367px;
+    font-size: 36px;
+    padding-top: 45px;
+    margin-bottom: 40px;
+  }
+}
 
 .hero__title_passion {
   font-size: 34px;
@@ -71,6 +86,11 @@
 @media screen and (min-width: 768px) {
   .hero__title_passion {
     font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title_passion {
+    font-size: 38px;
   }
 }
 
@@ -87,6 +107,11 @@
   font-size: 8px;
   line-height: 1.25;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .anchor-list__link {
+    font-size: 14px;
+  }
 }
 
 .anchor-list__link_products {
@@ -106,6 +131,11 @@
   color: #fcfcfc;
   border-color: #0a8817;
 }
+@media screen and (min-width: 1200px) {
+  .anchor-list__link_products {
+    padding: 12px 34px;
+  }
+}
 
 .anchor-list__link_about {
   padding: 7px 10px;
@@ -120,6 +150,85 @@
 .anchor-list__link_about:focus {
   color: #fcfcfc;
 }
+@media screen and (min-width: 1200px) {
+  .anchor-list__link_about {
+    padding: 12px 21px;
+  }
+}
+
+.hero-ice-cream {
+  position: absolute;
+  display: block;
+  top: 245px;
+  left: 82px;
+  z-index: 300;
+}
+@media screen and (min-width: 768px) {
+  .hero-ice-cream {
+    top: 25px;
+    left: 418px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-ice-cream {
+    top: 30px;
+    left: 651px;
+  }
+}
+
+.hero-ice-cream_bg {
+  width: 167px;
+  height: 218px;
+  position: absolute;
+  display: block;
+  top: 245px;
+  left: 82px;
+  z-index: 280;
+  background: rgba(252, 252, 252, 0.44);
+  filter: blur(26.8405px);
+}
+@media screen and (min-width: 768px) {
+  .hero-ice-cream_bg {
+    width: 266px;
+    height: 341px;
+    top: 25px;
+    left: 418px;
+    filter: blur(27.9859px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-ice-cream_bg {
+    width: 477px;
+    height: 590px;
+    top: 0px;
+    left: 658px;
+    filter: blur(60px);
+  }
+}
+
+.hero-dots {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-plate {
+    display: block;
+    position: absolute;
+    bottom: 13px;
+    left: 32px;
+    z-index: 100;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-plate {
+    bottom: 65px;
+    left: 17px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .hero-shop-list {
@@ -129,9 +238,20 @@
     right: 32px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero-shop-list {
+    top: 56px;
+    right: 16px;
+  }
+}
 
 .hero-shop-list__item {
   margin-bottom: 34px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-shop-list__item {
+    margin-bottom: 16px;
+  }
 }
 
 .hero-shop-list__number {
@@ -143,6 +263,11 @@
   text-transform: uppercase;
   color: #131313;
 }
+@media screen and (min-width: 1200px) {
+  .hero-shop-list__number {
+    font-size: 46px;
+  }
+}
 
 .hero-shop-list__desc {
   font-weight: 400;
@@ -151,13 +276,9 @@
   text-align: right;
   color: #fcfcfc;
 }
-
-@media screen and (min-width: 768px) {
-  .hero-plate {
-    display: block;
-    position: absolute;
-    bottom: 13px;
-    left: 32px;
+@media screen and (min-width: 1200px) {
+  .hero-shop-list__desc {
+    font-size: 14px;
   }
 }
 
@@ -165,16 +286,50 @@
   .hero__text {
     display: block;
     position: absolute;
+    z-index: 10;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 140%;
     width: 151px;
-    bottom: 52px;
+    top: 214px;
     left: 217px;
     color: #fcfcfc;
+    margin-bottom: 20px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    width: 200px;
+    font-size: 14px;
+    top: 368px;
+    left: 256px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-arrow-button {
+    display: block;
+    position: absolute;
+    top: 319px;
+    left: 216px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-arrow-button {
+    top: 480px;
+    left: 256px;
+  }
+}
+
+.hero-arrow-button__icon {
+  width: 40px;
+  fill: #fcfcfc;
 }
 
 body {
