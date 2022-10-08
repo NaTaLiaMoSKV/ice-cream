@@ -1,3 +1,182 @@
+@media screen and (max-width: 767px) {
+  .hero-plate {
+    display: none;
+  }
+  .hero__text {
+    display: none;
+  }
+  .hero-arrow-button {
+    display: none;
+  }
+  .hero-shop-list {
+    display: none;
+  }
+}
+.hero {
+  position: relative;
+  background-color: #84a178;
+  background-image: url(..//../images/hero-dots-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100%;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 192dpi) and (max-width: 768px), (min-resolution: 2dppx) and (max-width: 768px) {
+  .hero {
+    background-image: url("..//../images/hero-dots-mobile@2x.png");
+  }
+}
+
+.hero__container {
+  padding-top: 61px;
+  padding-left: 20px;
+  height: 392px;
+}
+@media screen and (min-width: 480px) {
+  .hero__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding-top: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.hero__title {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 181px;
+    font-size: 18px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.hero__title_passion {
+  font-size: 34px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title_passion {
+    font-size: 24px;
+  }
+}
+
+.hero__anchor-list {
+  display: flex;
+  gap: 8px;
+}
+
+.anchor-list__link {
+  text-align: center;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.anchor-list__link_products {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 13px;
+  padding-left: 11px;
+  color: #000000;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.anchor-list__link_products:hover {
+  border-color: #0a8817;
+}
+.anchor-list__link_products:focus {
+  color: #fcfcfc;
+  border-color: #0a8817;
+}
+
+.anchor-list__link_about {
+  padding: 7px 10px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #f8d24e;
+  cursor: pointer;
+}
+.anchor-list__link_about:hover {
+  color: #0a8817;
+}
+.anchor-list__link_about:focus {
+  color: #fcfcfc;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-shop-list {
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 32px;
+  }
+}
+
+.hero-shop-list__item {
+  margin-bottom: 34px;
+}
+
+.hero-shop-list__number {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+}
+
+.hero-shop-list__desc {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: #fcfcfc;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-plate {
+    display: block;
+    position: absolute;
+    bottom: 13px;
+    left: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__text {
+    display: block;
+    position: absolute;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    width: 151px;
+    bottom: 52px;
+    left: 217px;
+    color: #fcfcfc;
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
