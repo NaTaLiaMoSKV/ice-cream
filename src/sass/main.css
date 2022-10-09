@@ -13,7 +13,7 @@
   }
 }
 .hero {
-  background-color: #84a178;
+  background-color: var(--green-bg-color);
 }
 
 .hero__container {
@@ -59,7 +59,7 @@
   line-height: 1.26;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--white-content-color);
   margin-bottom: 32px;
   margin-top: 0;
 }
@@ -134,7 +134,7 @@
   padding-right: 13px;
   padding-left: 11px;
   color: #000000;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--yellow-content-color);
   border-radius: 8px;
   cursor: pointer;
 }
@@ -167,7 +167,7 @@
   color: #0a8817;
 }
 .anchor-list__link_about:focus {
-  color: #fcfcfc;
+  color: var(--white-content-color);
 }
 
 .hero-ice-cream {
@@ -275,7 +275,7 @@
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #131313;
+  color: var(--black-content-color);
 }
 @media screen and (min-width: 1200px) {
   .hero-shop-list__number {
@@ -288,7 +288,7 @@
   font-size: 8px;
   line-height: 1.25;
   text-align: right;
-  color: #fcfcfc;
+  color: var(--white-content-color);
 }
 @media screen and (min-width: 1200px) {
   .hero-shop-list__desc {
@@ -309,7 +309,7 @@
     width: 151px;
     top: 214px;
     left: 217px;
-    color: #fcfcfc;
+    color: var(--white-content-color);
     margin-bottom: 20px;
     opacity: 65%;
   }
@@ -344,7 +344,7 @@
 
 .hero-arrow-button__icon {
   width: 100%;
-  fill: #fcfcfc;
+  fill: var(--white-content-color);
 }
 
 body {

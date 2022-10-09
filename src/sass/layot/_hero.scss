@@ -16,7 +16,7 @@
 // ============= /прячу не нужное до 767px =============
 
 .hero {
-  background-color: #84a178; //  не подтягивает vars?
+  background-color: var(--green-bg-color);
 }
 
 .hero__container {
@@ -56,7 +56,7 @@
   line-height: 1.26;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc; //  не подтягивает vars?
+  color: var(--white-content-color);
   margin-bottom: 32px;
   margin-top: 0;
 
@@ -122,7 +122,7 @@
   padding-right: 13px;
   padding-left: 11px;
   color: #000000;
-  border: 2px solid #f8d24e; //  не подтягивает vars?
+  border: 2px solid var(--yellow-content-color);
   border-radius: 8px;
   cursor: pointer;
   @media screen and (min-width: 1200px) {
@@ -130,11 +130,11 @@
   }
 
   &:hover {
-    border-color: #0a8817; //  не подтягивает vars?
+    border-color: #0a8817; // пока такой переменной нет , позже заменю
   }
   &:focus {
     color: #fcfcfc;
-    border-color: #0a8817; //  не подтягивает vars?
+    border-color: #0a8817; // пока такой переменной нет , позже заменю
   }
 }
 
@@ -147,10 +147,10 @@
     padding: 12px 21px;
   }
   &:hover {
-    color: #0a8817; //  не подтягивает vars?
+    color: #0a8817; //  пока такой переменной нет , позже заменю
   }
   &:focus {
-    color: #fcfcfc;
+    color: var(--white-content-color);
   }
 }
 // ============= /anchor-list =============
@@ -244,13 +244,13 @@
   }
 }
 .hero-shop-list__number {
-  font-weight: 900; // нет шрифтов для 900 ?
+  font-weight: 900;
   font-size: 28px;
   line-height: 1.21;
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #131313; //  не подтягивает vars?
+  color: var(--black-content-color);
   @media screen and (min-width: 1200px) {
     font-size: 46px;
   }
@@ -260,7 +260,7 @@
   font-size: 8px;
   line-height: 1.25;
   text-align: right;
-  color: #fcfcfc; //  не подтягивает vars?
+  color: var(--white-content-color);
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
@@ -281,7 +281,7 @@
     width: 151px;
     top: 214px;
     left: 217px;
-    color: #fcfcfc; //  не подтягивает vars?
+    color: var(--white-content-color);
     margin-bottom: 20px;
     opacity: 65%;
   }
@@ -311,5 +311,5 @@
 }
 .hero-arrow-button__icon {
   width: 100%;
-  fill: #fcfcfc; //  не подтягивает vars?
+  fill: var(--white-content-color);
 }
