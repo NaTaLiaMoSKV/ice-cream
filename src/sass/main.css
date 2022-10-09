@@ -75,8 +75,12 @@
   .hero__title {
     width: 367px;
     font-size: 36px;
-    padding-top: 45px;
-    margin-bottom: 40px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 45px;
+    left: 16px;
+    z-index: 550;
   }
 }
 
@@ -97,6 +101,16 @@
 .hero__anchor-list {
   display: flex;
   gap: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__anchor-list {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 217px;
+    left: 16px;
+    z-index: 555;
+  }
 }
 
 .anchor-list__link {
@@ -124,17 +138,17 @@
   border-radius: 8px;
   cursor: pointer;
 }
+@media screen and (min-width: 1200px) {
+  .anchor-list__link_products {
+    padding: 12px 34px;
+  }
+}
 .anchor-list__link_products:hover {
   border-color: #0a8817;
 }
 .anchor-list__link_products:focus {
   color: #fcfcfc;
   border-color: #0a8817;
-}
-@media screen and (min-width: 1200px) {
-  .anchor-list__link_products {
-    padding: 12px 34px;
-  }
 }
 
 .anchor-list__link_about {
@@ -144,16 +158,16 @@
   color: #f8d24e;
   cursor: pointer;
 }
+@media screen and (min-width: 1200px) {
+  .anchor-list__link_about {
+    padding: 12px 21px;
+  }
+}
 .anchor-list__link_about:hover {
   color: #0a8817;
 }
 .anchor-list__link_about:focus {
   color: #fcfcfc;
-}
-@media screen and (min-width: 1200px) {
-  .anchor-list__link_about {
-    padding: 12px 21px;
-  }
 }
 
 .hero-ice-cream {
@@ -211,7 +225,7 @@
   display: block;
   left: 0;
   bottom: 0;
-  z-index: 50;
+  z-index: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -297,6 +311,7 @@
     left: 217px;
     color: #fcfcfc;
     margin-bottom: 20px;
+    opacity: 65%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -328,7 +343,7 @@
 }
 
 .hero-arrow-button__icon {
-  width: 40px;
+  width: 100%;
   fill: #fcfcfc;
 }
 

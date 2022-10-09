@@ -69,8 +69,12 @@
   @media screen and (min-width: 1200px) {
     width: 367px;
     font-size: 36px;
-    padding-top: 45px;
-    margin-bottom: 40px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 45px;
+    left: 16px;
+    z-index: 550;
   }
 }
 .hero__title_passion {
@@ -88,7 +92,16 @@
 .hero__anchor-list {
   display: flex;
   gap: 8px;
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 217px;
+    left: 16px;
+    z-index: 555;
+  }
 }
+
 .anchor-list__link {
   text-align: center;
   font-family: inherit;
@@ -97,6 +110,7 @@
   font-size: 8px;
   line-height: 1.25;
   text-decoration: none;
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
@@ -111,15 +125,16 @@
   border: 2px solid #f8d24e; //  не подтягивает vars?
   border-radius: 8px;
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    padding: 12px 34px;
+  }
+
   &:hover {
     border-color: #0a8817; //  не подтягивает vars?
   }
   &:focus {
     color: #fcfcfc;
     border-color: #0a8817; //  не подтягивает vars?
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 12px 34px;
   }
 }
 
@@ -128,14 +143,14 @@
   text-decoration-line: underline;
   color: #f8d24e;
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    padding: 12px 21px;
+  }
   &:hover {
     color: #0a8817; //  не подтягивает vars?
   }
   &:focus {
     color: #fcfcfc;
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 12px 21px;
   }
 }
 // ============= /anchor-list =============
@@ -166,7 +181,6 @@
   z-index: 280;
   background: rgba(252, 252, 252, 0.44);
   filter: blur(26.8405px);
-
   @media screen and (min-width: 768px) {
     width: 266px;
     height: 341px;
@@ -182,6 +196,7 @@
     filter: blur(60px);
   }
 }
+
 // ============= /hero-ice-cream =============
 
 // ============= hero-dots =============
@@ -190,7 +205,7 @@
   display: block;
   left: 0;
   bottom: 0;
-  z-index: 50;
+  z-index: 0;
 }
 // ============= /hero-dots =============
 // ============= hero-plate =============
@@ -268,6 +283,7 @@
     left: 217px;
     color: #fcfcfc; //  не подтягивает vars?
     margin-bottom: 20px;
+    opacity: 65%;
   }
   @media screen and (min-width: 1200px) {
     width: 200px;
@@ -294,6 +310,6 @@
   }
 }
 .hero-arrow-button__icon {
-  width: 40px;
+  width: 100%;
   fill: #fcfcfc; //  не подтягивает vars?
 }
