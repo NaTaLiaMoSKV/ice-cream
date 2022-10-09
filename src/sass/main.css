@@ -13,7 +13,7 @@
   }
 }
 .hero {
-  background-color: #84a178;
+  background-color: var(--green-bg-color);
 }
 
 .hero__container {
