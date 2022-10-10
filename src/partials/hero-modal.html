@@ -1,4 +1,4 @@
-<!-- <div hero-modal class="backdrop is-hidden">
+<div hero-modal class="backdrop is-hidden">
   <div class="modal-hero ">
     <button type="button" hero-modal-close class="modal-close-btn">
       <svg width="20" height="20">
@@ -32,7 +32,7 @@
           <input
             type="text"
             class="modal-hero-form__input"
-            name="name"
+            name="username"
             pattern="[a-zA-Zа-яА-яІіЇї]+"
             minlength="3"
             placeholder="Name"
@@ -46,21 +46,18 @@
             class="modal-hero-form__input"
             type="tel"
             name="tel"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            placeholder="Phone" 
-            required
-          />
+            pattern="[0-9]{10}"
+            placeholder="Phone"/>
         </span>
       </label>
         <label class="modal-hero-form__label">
         <textarea
           class="modal-hero-form__textarea"
           name="comment"
-          placeholder="Comment"
-        ></textarea>
+          placeholder="Comment"></textarea>
       </label>
     </div>
       <button type="submit" class="modal-hero-form__button">Submit</button>
     </form>
   </div>
-</div> -->
+</div>

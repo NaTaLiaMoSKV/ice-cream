@@ -159,7 +159,7 @@
   letter-spacing: 0.04em;
   color: #131313;
   margin-bottom: 48px;
-  display: block;
+ 
 }
 
 .modal-products-form__textarea {
@@ -192,9 +192,4 @@
   font-weight: 400;
   font-size: 14px;
   color: #131313;
-}
-@media screen and (min-width: 768px) {
-  .modal-hero {
-    max-width: 568px;
-  }
 }
