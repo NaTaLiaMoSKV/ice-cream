@@ -48,6 +48,11 @@
   .ingridient__item {
     min-width: 368px;
   }
+  .modal-products__circle--green {
+    background-image: url('../images/products-modal-ice-cream-desktop.png');
+    background-size: cover;
+    background-position: center;
+  }
 }
 @media screen and (max-width: 480px) {
   .modal-products-form__labels {
@@ -92,7 +97,7 @@
   position: absolute;
   width: 130px;
   height: 130.6px;
-  left: -1%;
+  left: 0;
   top: -10%;
   z-index: 2;
   border-radius: 50%;

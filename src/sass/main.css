@@ -54,6 +54,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -116,6 +117,7 @@
 
 .modal-hero-form__ice-cream {
   position: relative;
+  display: block;
   width: 132px;
   height: 135px;
   padding-top: 95px;
@@ -123,6 +125,10 @@
   border: 2px solid #96af8c;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15.7808px;
+  transition-duration: 1000ms;
+}
+.modal-hero-form__ice-cream:focus, .modal-hero-form__ice-cream:hover {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7019607843), rgba(156, 190, 143, 0.7019607843)), #d9d9d9;
 }
 
 .modal-hero-form__ice-coffee {
@@ -131,10 +137,12 @@
   height: 135px;
   padding-top: 95px;
   padding-bottom: 20px;
-  background: #efd478;
   border: 2px solid #efd478;
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   border-radius: 15.7808px;
+}
+.modal-hero-form__ice-coffee:focus, .modal-hero-form__ice-coffee:hover {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
 }
 
 .modal-hero-form__ice-milkshakes {
@@ -146,6 +154,10 @@
   border: 2px solid #d6936d;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15.7808px;
+  transition-duration: 500ms;
+}
+.modal-hero-form__ice-milkshakes:focus, .modal-hero-form__ice-milkshakes:hover {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
 }
 
 .modal-hero-form__img--green {
@@ -319,6 +331,11 @@ input:invalid {
   .ingridient__item {
     min-width: 368px;
   }
+  .modal-products__circle--green {
+    background-image: url("../images/products-modal-ice-cream-desktop.png");
+    background-size: cover;
+    background-position: center;
+  }
 }
 @media screen and (max-width: 480px) {
   .modal-products-form__labels {
@@ -359,7 +376,7 @@ input:invalid {
   position: absolute;
   width: 130px;
   height: 130.6px;
-  left: -1%;
+  left: 0;
   top: -10%;
   z-index: 2;
   border-radius: 50%;
