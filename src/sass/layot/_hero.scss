@@ -1,7 +1,6 @@
 //  ======================= mom animation  =======================
 
 @media screen and (min-width: 321px) and (max-width: 479px) {
-
   .hero-ice-mom {
     display: none;
   }
@@ -43,12 +42,9 @@
     right: 90px;
     animation-duration: 4150ms;
   }
-
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
-
   @keyframes mom-animation {
-
     0% {
       top: 0px;
       right: 78px;
@@ -67,9 +63,7 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-
   @keyframes mom-animation {
-
     0% {
       top: 0px;
       right: 188px;
@@ -88,9 +82,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
   @keyframes mom-animation {
-
     0% {
       top: 140px;
       right: 450px;
@@ -104,9 +96,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-
   @keyframes mom-animation {
-
     0% {
       top: 0px;
       right: 590px;
@@ -156,13 +146,10 @@
     left: 725px;
     animation-duration: 4150ms;
   }
-
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-
   @keyframes son-animation {
-
     0% {
       top: 0px;
       right: 148px;
@@ -180,9 +167,7 @@
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-
   @keyframes son-animation {
-
     0% {
       top: 0px;
       right: 258px;
@@ -200,9 +185,7 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
   @keyframes son-animation {
-
     0% {
       top: 90px;
       left: 180px;
@@ -215,9 +198,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-
   @keyframes son-animation {
-
     0% {
       top: 0px;
       left: 0px;
@@ -265,13 +246,10 @@
     right: 100px;
     animation-duration: 3750ms;
   }
-
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-
   @keyframes dad-animation {
-
     0% {
       top: 0px;
       right: 88px;
@@ -290,9 +268,7 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-
   @keyframes dad-animation {
-
     0% {
       top: 0px;
       right: 198px;
@@ -311,7 +287,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
   @keyframes dad-animation {
     0% {
       top: 30px;
@@ -326,9 +301,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-
   @keyframes dad-animation {
-
     0% {
       bottom: 0px;
       right: 1050px;
@@ -352,7 +325,6 @@
 // ============= /dad animation =============
 // ============= прячу не нужное до 767px =============
 @media screen and (max-width: 767px) {
-
   .hero-plate {
     display: none;
   }
@@ -364,11 +336,10 @@
   .hero-arrow-button {
     display: none;
   }
-  
+
   .hero-shop-list {
     display: none;
   }
-
 }
 // ============= /прячу не нужное до 767px =============
 
@@ -406,7 +377,6 @@
     padding-left: 16px;
     padding-right: 16px;
   }
-
 }
 
 .anchor-list__link_products {
@@ -438,6 +408,11 @@
   margin-bottom: 32px;
   margin-top: 0;
 
+  // transform: translate(0px, -50%);
+  // opacity: 0;
+  transform: scale(0);
+  transition: transform 0.8s ease 0s;
+
   @media screen and (min-width: 768px) {
     width: 181px;
     font-size: 18px;
@@ -455,7 +430,12 @@
     left: 16px;
     z-index: 550;
   }
+}
 
+.hero__title._active {
+  transform: scale(1);
+  // transform: translate(0px, 0px);
+  // opacity: 1;
 }
 
 .hero__title_passion {
@@ -468,7 +448,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 38px;
   }
-
 }
 // ============= /title =============
 
@@ -485,11 +464,9 @@
     left: 16px;
     z-index: 555;
   }
-
 }
 
 .anchor-list__link {
-
   text-align: center;
   font-family: inherit;
   font-weight: 600;
@@ -597,7 +574,6 @@
     left: 651px;
     filter: blur(60px);
   }
-
 }
 
 // ============= /hero-ice-cream =============
@@ -650,7 +626,6 @@
     top: 56px;
     right: 16px;
   }
-
 }
 .hero-shop-list__item {
   margin-bottom: 34px;
@@ -711,7 +686,6 @@
   }
 
   &::after {
-
     @media screen and (min-width: 768px) {
       position: absolute;
       content: '';

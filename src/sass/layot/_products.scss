@@ -21,7 +21,6 @@
   &:focus {
     transform: scale(1.15);
   }
-
 }
 
 .products__section {
@@ -42,6 +41,15 @@
   margin-bottom: 12px;
 
   color: var(--black-content-color);
+
+  transform: translate(-30%, 0px);
+  opacity: 0;
+  transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+}
+
+.products__label._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .products__title {
@@ -54,6 +62,15 @@
   margin-bottom: 148px;
 
   color: var(--black-content-color);
+
+  transform: translate(30%, 0px);
+  opacity: 0;
+  transition: transform 0.8s ease 300ms, opacity 0.8s ease 300ms;
+}
+
+.products__title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .products__item--green {
@@ -72,24 +89,43 @@
   position: relative;
 }
 
+.products__item {
+  transform: translate(0px, -20%) scale(0.5);
+  opacity: 0;
+  transition: transform 0.8s ease 0s;
+}
+.products__item._active {
+  transform: translate(0px, 0px) scale(1);
+  opacity: 1;
+}
+
 .products__circle--green {
-  background: linear-gradient(0deg, var(--green-product-modal-color), var(--green-product-modal-color)), var(--white-product-modal-color);
+  background: linear-gradient(
+      0deg,
+      var(--green-product-modal-color),
+      var(--green-product-modal-color)
+    ),
+    var(--white-product-modal-color);
   box-shadow: 0 5.34219px 20.0332px #0a881740;
 }
 
 .products__circle--yellow {
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       var(--about-yellow-color),
-      var(--about-yellow-color)),
+      var(--about-yellow-color)
+    ),
     var(--white-product-modal-color);
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
 .products__circle--brown {
   // margin-bottom: 0;
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       var(--orange-product-modal-color),
-      var(--orange-product-modal-color)),
+      var(--orange-product-modal-color)
+    ),
     var(--white-product-modal-color);
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
@@ -149,7 +185,6 @@
 
 // --------------@media screen and (max-width: 767px)--------------
 @media screen and (max-width: 767px) {
-
   .products__item {
     display: flex;
     flex-direction: column;
@@ -165,10 +200,10 @@
     height: 420px;
   }
 
-    .products__item--green,
-    .products__item--yellow {
-      margin-bottom: 164px;
-    }
+  .products__item--green,
+  .products__item--yellow {
+    margin-bottom: 164px;
+  }
 
   .products__circle {
     width: 200px;
@@ -188,12 +223,10 @@
       width: 200px;
       height: 200px;
     }
-
   }
 }
 
 @media screen and (min-width: 768px) {
-
   .products__container {
     width: 768px;
     margin-right: auto;
@@ -251,15 +284,13 @@
       height: 200px;
       width: 200px;
     }
-    
   }
 }
 
 // ретина
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .products__name.cream::before {
     background-image: url('../images/products-ice-cream-mobile@2x.png');
   }
@@ -271,12 +302,10 @@
   .products__name.milkshake::before {
     background-image: url('../images/products-milkshake-mobile@2x.png');
   }
-
 }
 
 // ретина
 @media screen and (min-width: 480px) {
-
   .products__description {
     margin-bottom: 0;
   }
@@ -284,12 +313,9 @@
   .products__item {
     width: 280px;
   }
-
-
 }
 
 @media screen and (max-width: 768px) {
-
   .products__section {
     padding-bottom: 60px;
   }
@@ -297,7 +323,6 @@
 
 // tablet
 @media screen and (min-width: 768px) {
-
   .products__container {
     width: 768px;
     padding-left: 32px;
@@ -330,7 +355,6 @@
     margin-bottom: 82px;
   }
 
-
   .products__list {
     display: flex;
     column-gap: 16px;
@@ -358,9 +382,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .products__name.cream::before {
       background-image: url('../images/products-ice-cream-tablet@2x.png');
       background-size: cover;
@@ -378,11 +401,9 @@
       background-size: cover;
       background-position: center;
     }
-
   }
 
   @media screen and (min-width: 1200px) {
-
     .products__container {
       width: 1200px;
     }
@@ -427,8 +448,8 @@
 
     // ретина
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       .products__name.cream::before {
         background-image: url('../images/products-ice-cream-desktop@2x.png');
         background-size: cover;
@@ -446,7 +467,6 @@
         background-size: cover;
         background-position: center;
       }
-
     }
 
     // ретина
@@ -492,7 +512,6 @@
         width: 300px;
         height: 300px;
       }
-      
     }
   }
 }
